@@ -36,8 +36,8 @@ The third and fourth datasets, zippedData/imdb.name.basics.csv.gz and zippedData
 
 ## Conclusion
 - The film's profitability will be significantly influenced by the budget earmarked for its production. It's important to keep in mind that allocating a budget does not guarantee the film's automatic success.
-- Genres that predominantly dominate the top earners are Action and Adventure. Films are not limited to these but having aspects of these genres in the films can boost profitabilty
-- Majority of the films that do well in the industry in terms of profitability or return on investement are long films with runtime betweem 80 minutes to 150 minutes
+- Genres that predominantly dominate the top earners are Action and Adventure. Films are not limited to these but having aspects of these genres in the films can boost profitability
+- Majority of the films that do well in the industry in terms of profitability or return on investment are long films with runtime between 80 minutes to 150 minutes
 - Popular genres among many of the filmmakers are drama and documentary. This may be due to individual market research and may be considered safe genres to make film in
 - The bigger the budget the more likely many people will watch and react to the film even if they don't like it.
 
