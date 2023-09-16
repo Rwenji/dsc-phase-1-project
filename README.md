@@ -1,65 +1,53 @@
-# Phase 1 Project
+![Alt text](download-1.jpeg)
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+## Overview
 
-## Project Overview
+In light of the surge in original film production by prominent corporations, Microsoft has sought our expertise in evaluating the prospects of the movie industry and offering guidance prior to any strategic determinations. Our assessment encompassed the utilization of return on investment as a key indicator for assessing the viability of distinct genres. Additionally, we conducted an in-depth examination of the leading studios in terms of box office success and scrutinized the most sought-after genres, as evidenced by substantial viewer ratings, in order to formulate our recommendations.
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+## Business Problem
 
-### Business Problem
+Microsoft's primary concern revolves around ascertaining the viability of entering the film industry as a profitable business endeavor. Their pivotal tasks include pinpointing the specific genres of films to produce, formulating effective profit strategies, and establishing a distinctive presence that positions them as industry frontrunners.
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+## Data Understanding
 
-### The Data
+Four distinct datasets were provided, each containing unique data. These datasets include:
 
-In the folder `zippedData` are movie datasets from:
+Box Office Mojo Movie Gross
+IMDB Title Basics
+IMDB Title Ratings
+The Numbers Movie Budgets
+This analysis makes use of datasets obtained from three different movie websites, specifically Box Office Mojo, The Numbers, and IMDB.
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+The initial dataset, zippedData/bom.movie_gross.csv.gz, consists of five columns featuring movie titles, studio information, domestic and foreign financial earnings, and the release year.
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+The second dataset, zippedData/tn.movie_budgets.csv.gz, encompasses details about released films, encompassing their titles, release dates, and financial data such as production budgets and global earnings. The key focus in this dataset is the Return on Investment (ROI), and the financial columns take precedence in its selection.
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+The third and fourth datasets, zippedData/imdb.name.basics.csv.gz and zippedData/imdb.title.ratings.csv.gz, contain data on genre codes, the original language of the films, original movie titles, popularity metrics, release dates, and voting information. These datasets were used to correlate genre codes with genre names sourced from the same website, enabling the identification of trending genres.
 
-## Deliverables
+## Data Analysis
+- Selecting and analyzing the datasets.
+- Cleaning the Datasets.
+- Merging DataFrames to work with.
+- Anaylsis and Visualization
+- Conclusion
+- Recommendation
 
-There are three deliverables for this project:
+## Conclusion
+- The film's profitability will be significantly influenced by the budget earmarked for its production. It's important to keep in mind that allocating a budget does not guarantee the film's automatic success.
+- Genres that predominantly dominate the top earners are Action and Adventure. Films are not limited to these but having aspects of these genres in the films can boost profitabilty
+- Majority of the films that do well in the industry in terms of profitability or return on investement are long films with runtime betweem 80 minutes to 150 minutes
+- Popular genres among many of the filmmakers are drama and documentary. This may be due to individual market research and may be considered safe genres to make film in
+- The bigger the budget the more likely many people will watch and react to the film even if they don't like it.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+## Recommendations
+__Comprehensive Budget Considerations__: When planning your film projects, it's crucial to take into account various elements that contribute to production quality and profitability. These encompass factors such as production quality, marketing strategies, the caliber of the cast, script quality, costume design, set design, and all other aspects related to budgeting. A thorough examination of these elements will help shape a more profitable film.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+__Focus on Action and Adventure Genres__: It's advisable to give priority to producing more Action and Adventure films. These genres have consistently proven to be top earners within the industry. Audiences are drawn to thrilling, action-packed stories, making them a lucrative choice for filmmakers seeking profitability.
 
-### Key Points
+__Explore Drama and Documentary Productions__: In addition to Action and Adventure, consider exploring the production of drama and documentary films. These genres have a broad and enduring appeal within the industry and resonate well with both audiences and fellow filmmakers. Diversifying your portfolio with these genres can provide a stable and popular foundation.
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+__Embrace Longer Film Formats__: When deciding on film duration, it's worth noting that audiences generally prefer longer films over shorter ones. Longer films often allow for deeper storytelling, character development, and immersive experiences. While brevity has its merits, especially in certain genres like comedy, prioritizing longer films can enhance their perceived value and appeal to paying audiences.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
-
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
-
-## Getting Started
-
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
-
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
-
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+__Market Research and Audience Preferences__: Alongside these recommendations, conduct thorough market research to understand current audience preferences and industry trends. Stay attuned to what viewers are seeking, as this can inform your decisions regarding genres, film length, and overall production strategies. Adapting to changing tastes is essential for sustained success in the film industry.
